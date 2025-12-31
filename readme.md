@@ -22,10 +22,15 @@ basic-backend-setup/
 ├── node_modules/
 ├── public/              # (Optional) for static assets
 ├── src/                 # Application source code lives here
-│   └── index.js
-│
-├── .gitignore
-├── package.json
+│   └── index.js         # App entry point (server setup & startup)
+│   └── controllers/     # Request handling logic (business logic)
+│   └── db/              # Database connection & configuration
+│   └── middlewares/     # Custom middleware (auth, validation, logging)
+│   └── models/          # Database schemas/models
+│   └── routes/          # API route definitions
+│   └── utils/           # Helper and utility functions
+├── .gitignore           # Files/folders ignored by Git
+├── package.json         # Project metadata, scripts, and dependencies  
 └── README.md
 ```
 
